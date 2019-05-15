@@ -10,7 +10,7 @@
   $password = $_POST["password"];
   $nombre = $_POST["nombre"];
  
-  $UsuariosDAO = UsuariosDAO::getInstance();
+  $UsuariosDAO = new UsuariosDAO();
   $usuario = new Usuario();
   $usuario->setId($id);
   $usuario->setUsername($username);
