@@ -11,4 +11,12 @@ class UsuariosDAO{
       query($sql);
     }
 
+    public function borrar($id){
+      $sql = "DELETE FROM usuarios"
+             . " WHERE id=$id";
+      query($sql);
+    
+    }
+    
+
 }
